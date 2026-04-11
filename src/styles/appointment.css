@@ -1,0 +1,95 @@
+.appointment-page{
+
+min-height:100vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+
+font-family:"Segoe UI",sans-serif;
+
+}
+
+.appointment-card{
+
+width:400px;
+
+background:rgba(255,255,255,0.1);
+
+backdrop-filter:blur(10px);
+
+padding:35px;
+
+border-radius:15px;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
+
+color:white;
+
+}
+
+.appointment-card h2{
+
+text-align:center;
+margin-bottom:25px;
+
+}
+
+.appointment-card form{
+
+display:flex;
+flex-direction:column;
+gap:15px;
+
+}
+
+.appointment-card input,
+.appointment-card select,
+.appointment-card textarea{
+
+padding:12px;
+
+border:none;
+
+border-radius:8px;
+
+outline:none;
+
+font-size:14px;
+
+}
+
+.appointment-card textarea{
+
+resize:none;
+height:80px;
+
+}
+
+.appointment-card button{
+
+padding:12px;
+
+border:none;
+
+border-radius:8px;
+
+background:#36d1dc;
+
+color:white;
+
+font-weight:bold;
+
+cursor:pointer;
+
+transition:0.3s;
+
+}
+
+.appointment-card button:hover{
+
+background:#5b86e5;
+
+}

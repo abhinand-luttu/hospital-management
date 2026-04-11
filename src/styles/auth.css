@@ -1,0 +1,67 @@
+.auth-container{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+url("https://images.unsplash.com/photo-1586773860418-d37222d8fce3");
+background-size:cover;
+background-position:center;
+}
+
+/* glass form */
+.auth-card{
+width:350px;
+padding:40px;
+border-radius:12px;
+backdrop-filter:blur(10px);
+background:rgba(255,255,255,0.15);
+box-shadow:0 8px 25px rgba(0,0,0,0.3);
+text-align:center;
+color:white;
+}
+
+.auth-card h2{
+margin-bottom:25px;
+}
+
+.auth-card form{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+/* inputs */
+.auth-card input{
+padding:12px;
+border:none;
+border-radius:6px;
+outline:none;
+}
+
+/* button */
+.auth-card button{
+padding:12px;
+background:#4da6ff;
+border:none;
+border-radius:6px;
+color:white;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+.auth-card button:hover{
+background:#3399ff;
+}
+
+/* link text */
+.auth-card p{
+margin-top:15px;
+}
+
+.auth-card a{
+color:#a8e6ff;
+text-decoration:none;
+font-weight:bold;
+}

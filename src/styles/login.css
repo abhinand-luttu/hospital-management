@@ -1,0 +1,52 @@
+.home-container{
+height:100vh;
+background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+url("https://images.unsplash.com/photo-1586773860418-d37222d8fce3");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.overlay{
+text-align:center;
+color:white;
+}
+
+.overlay h1{
+font-size:48px;
+margin-bottom:10px;
+}
+
+.overlay p{
+font-size:20px;
+margin-bottom:40px;
+}
+
+/* button layout */
+.btn-group{
+display:flex;
+gap:20px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+/* new attractive button */
+.home-btn{
+padding:14px 35px;
+background:linear-gradient(135deg,#c7e9ff,#e6f7ff);
+color:#004d66;
+text-decoration:none;
+border-radius:10px;
+font-weight:600;
+box-shadow:0 6px 15px rgba(0,0,0,0.2);
+transition:all 0.3s ease;
+}
+
+/* hover effect */
+.home-btn:hover{
+background:linear-gradient(135deg,#a5dcff,#d4f1ff);
+transform:translateY(-3px);
+box-shadow:0 10px 20px rgba(0,0,0,0.3);
+}

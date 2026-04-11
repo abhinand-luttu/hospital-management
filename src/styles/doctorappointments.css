@@ -1,0 +1,52 @@
+.doctor-appointment-page{
+min-height:100vh;
+padding:50px;
+background:linear-gradient(135deg,#eef2ff,#f8fbff);
+font-family:'Segoe UI',sans-serif;
+}
+
+.doctor-appointment-page h1{
+text-align:center;
+margin-bottom:40px;
+color:#1e40af;
+}
+
+.appointment-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+max-width:1000px;
+margin:auto;
+}
+
+.appointment-card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.appointment-card:hover{
+transform:translateY(-6px);
+box-shadow:0 15px 35px rgba(0,0,0,0.15);
+}
+
+.appointment-card h3{
+color:#2563eb;
+margin-bottom:10px;
+}
+
+.appointment-card p{
+color:#555;
+margin:5px 0;
+}
+
+.status{
+margin-top:10px;
+padding:5px 10px;
+background:#dbeafe;
+color:#1e40af;
+border-radius:5px;
+display:inline-block;
+}

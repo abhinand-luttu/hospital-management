@@ -1,0 +1,74 @@
+.doctor-login-container{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#1e3c72,#2a5298);
+font-family:'Segoe UI',sans-serif;
+}
+
+.login-card{
+background:white;
+padding:50px 40px;
+border-radius:15px;
+width:350px;
+text-align:center;
+box-shadow:0 20px 40px rgba(0,0,0,0.2);
+animation:fadeIn 0.8s ease;
+}
+
+.login-card h1{
+color:#2c7be5;
+margin-bottom:5px;
+}
+
+.login-card p{
+color:#666;
+font-size:14px;
+margin-bottom:25px;
+}
+
+.login-card input{
+width:100%;
+padding:12px;
+margin:12px 0;
+border:1px solid #ddd;
+border-radius:8px;
+font-size:14px;
+transition:0.3s;
+}
+
+.login-card input:focus{
+border-color:#2c7be5;
+outline:none;
+box-shadow:0 0 5px rgba(44,123,229,0.4);
+}
+
+.login-card button{
+width:100%;
+padding:12px;
+margin-top:10px;
+border:none;
+border-radius:8px;
+background:linear-gradient(135deg,#2c7be5,#00c6ff);
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.login-card button:hover{
+transform:scale(1.05);
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}

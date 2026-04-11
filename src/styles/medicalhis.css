@@ -1,0 +1,82 @@
+.history-page{
+min-height:100vh;
+padding:40px;
+background:linear-gradient(135deg,#667eea,#764ba2);
+font-family:Arial, Helvetica, sans-serif;
+}
+
+.history-header{
+text-align:center;
+color:white;
+margin-bottom:40px;
+}
+
+.history-header h1{
+font-size:38px;
+margin-bottom:10px;
+}
+
+.history-header p{
+opacity:0.9;
+}
+
+.history-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.history-card{
+background:rgba(255,255,255,0.95);
+border-radius:15px;
+padding:25px;
+box-shadow:0 15px 35px rgba(0,0,0,0.2);
+transition:0.3s;
+position:relative;
+overflow:hidden;
+}
+
+.history-card:hover{
+transform:translateY(-8px);
+box-shadow:0 20px 45px rgba(0,0,0,0.3);
+}
+
+.history-top{
+display:flex;
+justify-content:space-between;
+margin-bottom:15px;
+}
+
+.doctor{
+background:#4CAF50;
+color:white;
+padding:6px 12px;
+border-radius:20px;
+font-size:13px;
+font-weight:600;
+}
+
+.date{
+background:#2196F3;
+color:white;
+padding:6px 12px;
+border-radius:20px;
+font-size:13px;
+}
+
+.history-body p{
+margin:8px 0;
+color:#444;
+line-height:1.5;
+}
+
+.history-body strong{
+color:#222;
+}
+
+.no-history{
+text-align:center;
+color:white;
+font-size:18px;
+margin-top:40px;
+}

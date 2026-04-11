@@ -1,0 +1,51 @@
+.doctor-dashboard{
+min-height:100vh;
+padding:50px;
+background:linear-gradient(135deg,#eef2ff,#f8fbff);
+font-family:'Segoe UI',sans-serif;
+text-align:center;
+}
+
+.doctor-dashboard h1{
+color:#1e40af;
+margin-bottom:5px;
+}
+
+.doctor-dashboard p{
+color:#555;
+margin-bottom:40px;
+}
+
+.doctor-cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+max-width:1000px;
+margin:auto;
+}
+
+.doctor-card{
+background:white;
+padding:30px;
+border-radius:15px;
+text-decoration:none;
+color:#333;
+font-weight:600;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+transition:0.3s;
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:15px;
+}
+
+.doctor-card img{
+width:60px;
+}
+
+.doctor-card:hover{
+transform:translateY(-8px);
+box-shadow:0 15px 35px rgba(0,0,0,0.15);
+background:linear-gradient(135deg,#2c7be5,#00c6ff);
+color:white;
+}

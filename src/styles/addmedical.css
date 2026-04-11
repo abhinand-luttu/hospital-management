@@ -1,0 +1,56 @@
+.medical-page{
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+background:linear-gradient(135deg,#e3f2fd,#f1f8ff);
+}
+
+.medical-card{
+background:white;
+padding:40px;
+border-radius:15px;
+width:400px;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+.medical-card h2{
+text-align:center;
+margin-bottom:20px;
+color:#2c3e50;
+}
+
+.medical-card form{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.medical-card select,
+.medical-card input,
+.medical-card textarea{
+padding:10px;
+border-radius:8px;
+border:1px solid #ccc;
+font-size:14px;
+}
+
+.medical-card textarea{
+resize:none;
+height:80px;
+}
+
+.medical-card button{
+padding:12px;
+border:none;
+border-radius:8px;
+background:#3498db;
+color:white;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+.medical-card button:hover{
+background:#2980b9;
+}
