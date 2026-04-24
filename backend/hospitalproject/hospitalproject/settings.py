@@ -5,15 +5,16 @@ Django settings for hospitalproject project.
 from pathlib import Path
 import os
 
+# Base directory
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 # SECURITY
-SECRET_KEY = os.environ.get('SECRET_KEY', 'django-secret-key')
+SECRET_KEY = 'django-secret-key'
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['.onrender.com']
 
 
 # APPLICATIONS
@@ -36,7 +37,6 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
 
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -67,16 +67,7 @@ TEMPLATES = [
 ]
 
 
-WSGI_APPLICATION = 'hospitalproject.wsgi.application'
 
-
-# CORS
-CORS_ALLOW_ALL_ORIGINS = True
-
-
-# Razorpay Keys (Use Environment Variables)
-RAZORPAY_KEY_ID = os.environ.get("RAZORPAY_KEY_ID")
-RAZORPAY_KEY_SECRET = os.environ.get("RAZORPAY_KEY_SECRET")
 
 
 # DATABASE
@@ -115,12 +106,23 @@ USE_I18N = True
 USE_TZ = True
 
 
+# CORS
+CORS_ALLOW_ALL_ORIGINS = True
+
+
+# Razorpay keys
+RAZORPAY_KEY_ID = os.environ.get("RAZORPAY_KEY_ID")
+RAZORPAY_KEY_SECRET = os.environ.get("RAZORPAY_KEY_SECRET")
+
+
 # STATIC FILES
 STATIC_URL = '/static/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 
 # DEFAULT PRIMARY KEY
